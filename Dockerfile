@@ -4,7 +4,7 @@ FROM furdarius/npm
 
 MAINTAINER furdarius <getlag@yandex.com>
 
-#Packages
+# Packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libnotify-bin
 
