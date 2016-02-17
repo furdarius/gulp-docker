@@ -1,6 +1,6 @@
 # Gulp Docker Container
-# Base Dockerfile: furdarius/npm
-FROM furdarius/npm
+# Base Dockerfile: furdarius/npm-docker
+FROM furdarius/npm-docker
 
 MAINTAINER furdarius <getlag@yandex.com>
 
