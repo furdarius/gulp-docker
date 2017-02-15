@@ -1,12 +1,11 @@
 # Gulp Docker Container
 # Base Dockerfile: furdarius/npm-docker
-FROM furdarius/npm-docker
+FROM furdarius/npm-docker:alpine
 
 MAINTAINER furdarius <getlag@yandex.com>
 
 # Packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    libnotify-bin
+RUN apk add --no-cache libnotify
 
 # Install gulp:
 RUN npm install --global gulp-cli
